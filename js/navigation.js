@@ -220,6 +220,7 @@ class OpenMenuOut {
     }
     Open(e) {
         e.preventDefault();
+        console.log(this.index);
         this.index.classList.toggle(this.indexClass);
     }
     OpenMenuMain() {

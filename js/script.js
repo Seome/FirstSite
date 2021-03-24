@@ -14,24 +14,27 @@ function getCookies() {
 
 
 function funOnload() {
-    // if (getCookies()[0]['header'] == 1) {
-    //     include("js/Header.js");
-    // }
+    if (getCookies()[0]['header'] == 1) {
+        include("js/Header.js");
+    }
 
-    // include("js/ModalBlocks.js");
-    // include("js/SmallVersion.js");
-    // include("js/Slider.js");
-    // include("js/Banner.js");
-    // include("js/Content.js");
-    // include("js/Product.js");
-    // include("js/Reviews.js");
-    // include("js/News.js");
+    include("js/ModalBlocks.js");
+    include("js/SmallVersion.js");
+    include("js/Slider.js");
+    include("js/Banner.js");
+    include("js/Content.js");
+    include("js/Product.js");
+    include("js/Reviews.js");
+    include("js/News.js");
     // include("js/Promotion.js");
-    include("js/Footer.js");
+    // include("js/Footer.js");
+    include("js/FooterSecondType.js");
 
 
+    // includeCss('style/footerFirstType.css');
+    include("js/navigation.js");
 
-    // include("js/navigation.js");
+
 }
 
 function include(url) {
@@ -39,6 +42,7 @@ function include(url) {
     script.src = url;
     document.getElementsByTagName('head')[0].appendChild(script);
 }
+
 
 function includeCss(url) {
     var script = document.createElement('link');

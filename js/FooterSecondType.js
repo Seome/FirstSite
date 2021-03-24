@@ -1,7 +1,18 @@
-let footerMain = document.querySelector('footer');
-includeCss('style/footerFirstType.css');
-footerMain.innerHTML = `
+let footerSecond = document.querySelector('footer');
+includeCss('style/footerSecondType.css');
+
+footerSecond.innerHTML = `
+<div class="footer-top_two normal">
+<div class="footer-top_title">Subscribe to Newsletters</div>
+<div class="footer-letter">
+    <div class="footer-email">
+        <i class="far fa-envelope"></i> <input class="footer-input" type="text" placeholder="Your email address">
+    </div>
+    <div class="footer-btn">Subscribe</div>
+</div>
+</div>
 <div class="container normal">
+
 <div class="footer-top">
     <div class="footer-banner">
         <div class="footer-icon">
@@ -120,59 +131,7 @@ footerMain.innerHTML = `
         </div>
     </div>
 </div>
-<div class="footer-bottom">
-    <div class="footer-item">
-        <div class="footer-title">Payment Accept</div>
-        <div class="footer-payment">
-            <img src="source/img/payment/1.png" alt="">
-            <img src="source/img/payment/2.png" alt="">
-            <img src="source/img/payment/3.png" alt="">
-            <img src="source/img/payment/4.png" alt="">
-            <img src="source/img/payment/5.png" alt="">
-            <img src="source/img/payment/6.png" alt="">
-            <img src="source/img/payment/7.png" alt="">
-            <img src="source/img/payment/8.png" alt="">
-            <img src="source/img/payment/9.png" alt="">
-            <img src="source/img/payment/10.png" alt="">
-        </div>
-    </div>
-    <div class="footer-item">
-        <div class="footer-title">Newsletters <span>Follow Furnihome Store to update exclusive news and offers.</span></div>
-        <div class="footer-letter">
-            <div class="footer-email">
-                <i class="far fa-envelope"></i> <input class="footer-input" type="text" placeholder="Your email address">
-            </div>
-            <div class="footer-btn">Subscribe</div>
-        </div>
-    </div>
-    <div class="footer-item">
-        <div class="footer-title footer-left">Follow Us</div>
 
-        <ul class="footer-soc">
-            <li>
-                <a class="footer-skype" href=""></a>
-            </li>
-            <li>
-                <a class="footer-youtube" href=""></a>
-            </li>
-            <li>
-                <a class="footer-insta" href=""></a>
-            </li>
-            <li>
-                <a class="footer-google" href=""></a>
-            </li>
-            <li>
-                <a class="footer-twitter" href=""></a>
-            </li>
-            <li>
-                <a class="footer-pin" href=""></a>
-            </li>
-            <li>
-                <a class="footer-face" href=""></a>
-            </li>
-        </ul>
-    </div>
-</div>
 </div>
 <div class="container small">
 <div class="footer-small">
@@ -247,6 +206,52 @@ footerMain.innerHTML = `
 </div>
 </div>
 <div class=" copyright ">
-Copyright © 2015 Designed by KChi Studio. Premium e-commerce solutions.
+
+<div class="container copyright-content">
+    <div class="copyright-item">
+        Copyright © 2015 Designed by KChi Studio. Premium e-commerce solutions.
+    </div>
+
+
+    <div class="copyright-item normal">
+        <ul class="footer-soc">
+            <li>
+                <a class="footer-skype" href=""></a>
+            </li>
+            <li>
+                <a class="footer-youtube" href=""></a>
+            </li>
+            <li>
+                <a class="footer-insta" href=""></a>
+            </li>
+            <li>
+                <a class="footer-google" href=""></a>
+            </li>
+            <li>
+                <a class="footer-twitter" href=""></a>
+            </li>
+            <li>
+                <a class="footer-pin" href=""></a>
+            </li>
+            <li>
+                <a class="footer-face" href=""></a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright-item normal">
+        <div class="footer-payment">
+            <img src="source/img/payment/1.png" alt="">
+            <img src="source/img/payment/2.png" alt="">
+            <img src="source/img/payment/3.png" alt="">
+            <img src="source/img/payment/4.png" alt="">
+            <img src="source/img/payment/5.png" alt="">
+            <img src="source/img/payment/6.png" alt="">
+            <img src="source/img/payment/7.png" alt="">
+            <img src="source/img/payment/8.png" alt="">
+            <img src="source/img/payment/9.png" alt="">
+            <img src="source/img/payment/10.png" alt="">
+        </div>
+    </div>
+</div>
 </div>
 `;
