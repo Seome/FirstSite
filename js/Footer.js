@@ -250,3 +250,5 @@ footerMain.innerHTML = `
 Copyright © 2015 Designed by KChi Studio. Premium e-commerce solutions.
 </div>
 `;
+
+includeCss('style/footerFirstType.css');
