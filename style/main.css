@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../source/fonts/Poppins/Poppins-Regular.ttf);
+    /* src: url(../source/fonts/Montserrat/Montserrat-Regular.ttf); */
+    src: url(../source/fonts/CenturyGothic/CenturyGothic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../source/fonts/Poppins/Poppins-Bold.ttf);
+    /* src: url(../source/fonts/Montserrat/Montserrat-Bold.ttf); */
+    src: url(../source/fonts/CenturyGothic/CenturyGothic-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins";
+    transition: transform .2s;
+}
+
+.stopOverflow {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1920px;
+    min-width: 320px;
+    width: 100%;
+}
+
+.dark-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000d1;
+    z-index: 105;
+}
+
+.dark-bg-two {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000d1;
+    z-index: 120;
+}

@@ -1,0 +1,124 @@
+.banner-1 {
+    margin: 1% 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner-item-top,
+.banner-item-center,
+.banner-item-bottom {
+    margin: 10px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-left,
+.banner-right {
+    margin: 0 10px;
+    padding: 0 0 22.6% 0;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: #f7f7f7;
+}
+
+.banner-right img,
+.banner-left img {
+    position: absolute;
+    width: 60%;
+    height: 85%;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.banner-right img {
+    right: 0;
+}
+
+.banner-left img {
+    left: 0;
+}
+
+.banner-item-top>div:nth-child(1) {
+    flex-grow: 2;
+}
+
+.banner-info-main,
+.banner-info-main-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 20;
+}
+
+.banner-info-main-right {
+    align-items: flex-end;
+}
+
+.banner-info-left,
+.banner-info-left-two {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-info-right,
+.banner-info-right-two {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-info-left-two,
+.banner-info-right-two {
+    max-width: 180px;
+}
+
+.banner-title-type-1,
+.banner-title-type-2,
+.banner-title-type-3,
+.banner-title-type-4,
+.banner-title-type-5,
+.banner-title-type-6 {
+    font-size: 38px;
+    font-family: "Poppins-Bold";
+    text-transform: uppercase;
+    /* text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%); */
+}
+
+.banner-title-type-1 {
+    color: #5f5f5f;
+}
+
+.banner-title-type-2 {
+    color: rgb(233, 179, 45);
+}
+
+.banner-title-type-4 {
+    color: rgb(87, 162, 192);
+}
+
+.banner-title-type-5 {
+    color: rgb(199, 144, 91);
+}
+
+.banner-title-type-6 {
+    color: rgb(225, 96, 91);
+}
+
+.banner-info-left>.slider-shop {
+    margin-left: 0;
+}
