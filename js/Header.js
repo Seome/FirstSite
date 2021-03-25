@@ -98,7 +98,7 @@ header.innerHTML = `
                         </li>
                         <li> <a href="">Home<i class="fas fa-caret-down"></i></a>
                             <ul class="home">
-                                <li><a href="">Home version 1</a></li>
+                                <li><a href="index.html">Home version 1</a></li>
                                 <li><a href="">Home version 2</a></li>
                                 <li><a href="">Home version 3</a></li>
                                 <li><a href="">Home version 4</a></li>
@@ -259,8 +259,8 @@ header.innerHTML = `
                                 <li><a href="">Compare</a></li>
                                 <li><a href="">Check Out</a></li>
                                 <li><a href="">Order Complete</a></li>
-                                <li><a href="">404 Page 01</a></li>
-                                <li><a href="">404 Page 02</a></li>
+                                <li><a href="404_type1.html">404 Page 01</a></li>
+                                <li><a href="404_type2.html">404 Page 02</a></li>
                                 <li><a href="">Search Reult</a></li>
                                 <li><a href="">FAQ</a></li>
                             </ul>
@@ -522,6 +522,7 @@ header.innerHTML = `
                 </nav>
             </div>
         </div>
+        <div class="header-line normal"> </div>
 
         <!-- ----------------------------------SEARCH----------------------------- -->
 
