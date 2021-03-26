@@ -1,7 +1,8 @@
-let content = document.getElementById('content');
-
-content.innerHTML = `
-<div class="brands normal">
+brands = document.createElement('div');
+brands.id = 'brands';
+includeCss('style/brands.css');
+brands.innerHTML = `
+<div class="content normal">
             <div class="container">
                 <div class="content-title">Our Brands</div>
                 <div class="content-subtitle">A curated collection of high-quality furniture from Furnihome makers.</div>
@@ -52,3 +53,5 @@ content.innerHTML = `
             </div>
         </div>
 `;
+
+rootLastElemet().insertAdjacentElement('afterend', brands);

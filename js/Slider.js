@@ -1,4 +1,5 @@
-let slider = document.getElementById('slider');
+slider = document.createElement('div');
+slider.id = "slider";
 
 slider.innerHTML = `
 <div class="slider-one">
@@ -36,3 +37,5 @@ slider.innerHTML = `
 </div>
 </div>
 `;
+
+rootLastElemet().insertAdjacentElement('afterend', slider);

@@ -1,5 +1,6 @@
-let modalBlocks = document.getElementById(`modalBlocks`);
-
+modalBlocks = document.createElement('div');
+modalBlocks.id = 'modalBlocks';
+header = document.querySelector('header');
 modalBlocks.innerHTML = `
 <div class="dark-bg"></div>
 
@@ -74,3 +75,5 @@ modalBlocks.innerHTML = `
 
         <!-- ----------------------------------SEARCH  TYPE TWO END----------------------------- -->
 `;
+
+header.insertAdjacentElement('afterend', modalBlocks);

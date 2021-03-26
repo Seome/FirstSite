@@ -1,4 +1,7 @@
-let banner = document.getElementById('banner');
+banner = document.createElement('div');
+banner.id = "banner";
+banner.className = "banner";
+includeCss('style/banner.css');
 
 banner.innerHTML = `
 <div class="container">
@@ -92,3 +95,5 @@ banner.innerHTML = `
 </div>
 </div>
 `;
+
+rootLastElemet().insertAdjacentElement('afterend', banner);

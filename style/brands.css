@@ -1,0 +1,142 @@
+.brands {
+    position: relative;
+    margin: 5% 0;
+}
+
+.brands-item img {
+    width: 270px;
+}
+
+.brands-slider-main {
+    position: relative;
+}
+
+.brands-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.brands-item {
+    margin: 10px;
+}
+
+.brands-item img {
+    filter: contrast(0%);
+}
+
+.brands-item img:hover {
+    filter: contrast(100%);
+}
+
+.brands-sellect {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.brands-sellect>ul {
+    padding: 0;
+}
+
+.brands-sellect>ul>li {
+    display: inline-block;
+    margin: 3px;
+    width: 14px;
+    height: 14px;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brands-on {
+    border: 3px solid #7a7a7a;
+}
+
+.brands-off {
+    background-color: #7a7a7a;
+}
+
+.brands-off:hover,
+.brands-on:hover {
+    border: 3px solid #d7b17c;
+    background-color: transparent;
+}
+
+.brands-prew,
+.brands-next {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.brands-prew>div,
+.brands-next>div {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
+    z-index: 50;
+}
+
+.brands-prew {
+    left: -10px;
+}
+
+.brands-next {
+    right: 30px;
+}
+
+.brands-prew>div:hover,
+.brands-next>div:hover {
+    background-color: #7a7a7a;
+    border: 2px solid #7a7a7a;
+    cursor: pointer;
+}
+
+.brands-prew>div>i,
+.brands-next>div>i {
+    padding: 12px 14px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.brands-prew>div:hover i,
+.brands-next>div:hover i {
+    color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+    .brands-next {
+        right: 60px;
+    }
+    .brands-prew {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .brands-item {
+        margin: 0px;
+    }
+    .brands-item img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .brands-item img {
+        width: 150px;
+    }
+    .brands-item img {
+        width: 200px;
+    }
+    .brands-sellect>ul>li,
+    .slider-sellect>ul>li {
+        width: 12px;
+        height: 12px;
+    }
+}

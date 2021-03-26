@@ -122,3 +122,118 @@
 .banner-info-left>.slider-shop {
     margin-left: 0;
 }
+
+@media screen and (max-width: 1440px) {
+    .banner-title-type-1,
+    .banner-title-type-2,
+    .banner-title-type-3,
+    .banner-title-type-4,
+    .banner-title-type-5,
+    .banner-title-type-6 {
+        font-size: 25px;
+    }
+    .banner-item-top,
+    .banner-item-center,
+    .banner-item-bottom {
+        margin: 5px 0;
+    }
+    .banner-right,
+    .banner-left {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .banner-title-type-1,
+    .banner-title-type-2,
+    .banner-title-type-3,
+    .banner-title-type-4,
+    .banner-title-type-5,
+    .banner-title-type-6 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner-info-left-two,
+    .banner-info-right-two {
+        max-width: 150px;
+    }
+    .banner-title-type-1,
+    .banner-title-type-2,
+    .banner-title-type-3,
+    .banner-title-type-4,
+    .banner-title-type-5,
+    .banner-title-type-6 {
+        font-size: 20px;
+    }
+    .banner-info-left,
+    .banner-info-left-two {
+        margin-left: 10px;
+    }
+    .banner-info-right,
+    .banner-info-right-two {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .banner-1 {
+        margin: 20px 0;
+        row-gap: 20px;
+    }
+    .banner-item-top,
+    .banner-item-center,
+    .banner-item-bottom {
+        margin: -10px 0;
+        flex-wrap: wrap;
+    }
+    .banner-right,
+    .banner-left {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .banner-right img,
+    .banner-left img {
+        width: 50%;
+        height: 60%;
+    }
+    .banner-1>div>div {
+        padding: 0 0 50% 0;
+    }
+    .banner-title-type-1,
+    .banner-title-type-2,
+    .banner-title-type-3,
+    .banner-title-type-4,
+    .banner-title-type-5,
+    .banner-title-type-6 {
+        font-size: 30px;
+        margin: 20px;
+    }
+    .banner-info-left-two,
+    .banner-info-right-two {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .banner-1 {
+        margin: 10px 0;
+    }
+    .banner-left,
+    .banner-right {
+        margin: 5px 0;
+        padding: 0 0 60% 0;
+    }
+    .banner-title-type-1,
+    .banner-title-type-2,
+    .banner-title-type-3,
+    .banner-title-type-4,
+    .banner-title-type-5,
+    .banner-title-type-6 {
+        font-size: 22px;
+        margin: 5px;
+    }
+}

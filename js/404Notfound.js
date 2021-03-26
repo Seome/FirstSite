@@ -1,8 +1,6 @@
-let element = document.createElement('div');
+element = document.createElement('div');
 element.className = 'notfound container';
 header = document.querySelector('header');
-console.log(str3[0]);
-
 let notfoundTitle = "";
 if (str3[0] == '404_type1') {
     notfoundTitle = `<img class='notfound-img' src="source/img/notfound/notfound1.png" alt="404">`;
@@ -25,3 +23,4 @@ ${notfoundTitle}
 
 
 header.insertAdjacentElement('afterend', element);
+header.insertAdjacentElement('afterend', namePages('404 Page not Found'));

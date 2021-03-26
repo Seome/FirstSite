@@ -1,6 +1,7 @@
-let header = document.querySelector('header');
+includeCss('style/header.css');
+element = document.createElement('header');
 
-header.innerHTML = `
+element.innerHTML = `
 
 <div class="container normal">
             <div class="header-top">
@@ -592,7 +593,9 @@ header.innerHTML = `
             </div>
         </div>
 
-        <!-- ----------------------------------SEARCH  END----------------------------- -->
 
 
 `;
+
+
+root.insertAdjacentElement('afterbegin', element);

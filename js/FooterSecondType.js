@@ -1,4 +1,5 @@
-let footerSecond = document.querySelector('footer');
+footerSecond = document.createElement('footer');
+
 includeCss('style/footerSecondType.css');
 
 footerSecond.innerHTML = `
@@ -255,3 +256,9 @@ footerSecond.innerHTML = `
 </div>
 </div>
 `;
+
+root.insertAdjacentElement('beforeend', footerSecond);
+
+new OpenMenuOut('#footerStoreMain', '#footerStoreContent', 'navShow').OpenMenu();
+new OpenMenuOut('#footerCustomerMain', '#footerCustomerContent', 'navShow').OpenMenu();
+new OpenMenuOut('#footerInformationMain', '#footerInformationContent', 'navShow').OpenMenu();

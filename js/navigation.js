@@ -1,7 +1,3 @@
-//Header-top menu
-
-
-
 /************     CHANGE LANGUAGE   *************/
 
 
@@ -187,7 +183,7 @@ search_close.onclick = function() {
 
 
 /************************************** DARK AND LIGHT *************************************/
-let light = document.getElementById('light'),
+light = document.getElementById('light'),
     dark = document.getElementById('dark'),
     head = document.querySelector('header'),
     footer = document.querySelector('footer'),
@@ -207,40 +203,7 @@ light.onclick = function() {
 
 /*************************************** BUrger Header *******************************/
 
-class OpenMenuOut {
-    constructor(parent, open, classOpen) {
-        this.parent = parent;
-        this.open = open;
-        this.classOpen = classOpen;
-        this.firstEl = document.querySelector(this.parent);
-        this.thirdEl = document.querySelector(this.open);
-    }
-    OpenMenu() {
-        this.firstEl.addEventListener('click', { handleEvent: this.Open, index: this.thirdEl, indexClass: this.classOpen });
-    }
-    Open(e) {
-        e.preventDefault();
-        console.log(this.index);
-        this.index.classList.toggle(this.indexClass);
-    }
-    OpenMenuMain() {
-        this.firstEl.addEventListener('click', { handleEvent: this.blockBody, index: this.thirdEl, indexClass: this.classOpen });
-    }
-    blockBody(e) {
-        e.preventDefault();
-        this.index.classList.toggle(this.indexClass);
-        document.body.classList.toggle('stopOverflow');
-    }
-}
 
-new OpenMenuOut('#smallSearch', '#smallSearchContent', 'openBlockY').OpenMenu();
-new OpenMenuOut('#smallBars', '#burgerMenu', 'openBlockX').OpenMenuMain();
-new OpenMenuOut('#burgerClose', '#burgerMenu', 'openBlockX').OpenMenuMain();
-new OpenMenuOut('#burgerLanguage', '#choseLanguage', 'openBlockX').OpenMenu();
-new OpenMenuOut('#closeLanguage', '#choseLanguage', 'openBlockX').OpenMenu();
-new OpenMenuOut('#burgerCurrency', '#choseCurrency', 'openBlockX').OpenMenu();
-new OpenMenuOut('#closeCurrency', '#choseCurrency', 'openBlockX').OpenMenu();
-new OpenMenuOut('#productSmallCatMain', '#productSmallCat', 'navShow').OpenMenu();
-new OpenMenuOut('#footerStoreMain', '#footerStoreContent', 'navShow').OpenMenu();
-new OpenMenuOut('#footerCustomerMain', '#footerCustomerContent', 'navShow').OpenMenu();
-new OpenMenuOut('#footerInformationMain', '#footerInformationContent', 'navShow').OpenMenu();
+
+
+// new OpenMenuOut('#productSmallCatMain', '#productSmallCat', 'navShow').OpenMenu();

@@ -779,6 +779,7 @@ footer {
         height: 40px;
     }
     .copyright {
+        min-width: 300px;
         padding: 10px
     }
     .copyright-item {

@@ -1,5 +1,6 @@
-let smallVersion = document.getElementById('smallVersion');
-
+smallVersion = document.createElement('div');
+smallVersion.id = 'smallVersion';
+header = document.querySelector('header');
 
 smallVersion.innerHTML = `
 <!------------------------------------ SMALL-VERSION ----------------------------->
@@ -117,3 +118,12 @@ smallVersion.innerHTML = `
     </div>
     <!------------------------------------ SMALL-VERSION Header end ----------------------------->
 `;
+
+header.insertAdjacentElement('afterend', smallVersion);
+new OpenMenuOut('#smallSearch', '#smallSearchContent', 'openBlockY').OpenMenuMain();
+new OpenMenuOut('#smallBars', '#burgerMenu', 'openBlockX').OpenMenuMain();
+new OpenMenuOut('#burgerClose', '#burgerMenu', 'openBlockX').OpenMenuMain();
+new OpenMenuOut('#burgerLanguage', '#choseLanguage', 'openBlockX').OpenMenu();
+new OpenMenuOut('#closeLanguage', '#choseLanguage', 'openBlockX').OpenMenu();
+new OpenMenuOut('#burgerCurrency', '#choseCurrency', 'openBlockX').OpenMenu();
+new OpenMenuOut('#closeCurrency', '#choseCurrency', 'openBlockX').OpenMenu();

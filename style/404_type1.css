@@ -73,9 +73,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .notfound {
-        margin-top: 60px;
-    }
     .notfound-alert {
         font-size: 200px;
     }
@@ -95,7 +92,7 @@
 
 @media screen and (max-width: 460px) {
     .notfound-alert {
-        font-size: 150px;
+        font-size: 120px;
     }
     .notfound-title {
         font-size: 28px;
