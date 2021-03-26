@@ -1,6 +1,8 @@
 slider = document.createElement('div');
 slider.id = "slider";
 
+includeCss('style/slider.css');
+
 slider.innerHTML = `
 <div class="slider-one">
 <div class="slider-prew"><i class="fas fa-chevron-left"></i></div>
@@ -38,4 +40,4 @@ slider.innerHTML = `
 </div>
 `;
 
-rootLastElemet().insertAdjacentElement('afterend', slider);
+rootLastElemet(slider);

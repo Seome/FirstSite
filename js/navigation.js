@@ -202,8 +202,3 @@ light.onclick = function() {
 
 
 /*************************************** BUrger Header *******************************/
-
-
-
-
-// new OpenMenuOut('#productSmallCatMain', '#productSmallCat', 'navShow').OpenMenu();

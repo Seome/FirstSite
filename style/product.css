@@ -1,0 +1,346 @@
+/******************* FEATURED PRODUCT **********************/
+
+.product {
+    margin-top: 20px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.product-img {
+    width: 100%;
+    padding: 0 0 100% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.product-small {
+    display: none;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.product-small,
+.product-small i {
+    color: #333333;
+}
+
+.product-small .active {
+    background-color: #ededed;
+}
+
+.product-small div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-nav {
+    padding-left: 0;
+    position: relative;
+    max-height: 0;
+    width: 100%;
+    visibility: hidden;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+    transition: all .5s ease;
+    overflow: auto;
+}
+
+.product-small li,
+.product-small div {
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #e4e4e4;
+}
+
+.nav-product {
+    width: 100%;
+}
+
+.nav-product>ul {
+    margin: 2.3% auto;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-product>ul>li {
+    margin: 0 25px;
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    font-family: "Poppins";
+    color: #7a7a7a;
+    cursor: pointer;
+}
+
+.nav-product>ul>li:hover {
+    color: #d7b17c;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: calc(20% - 40px);
+    margin: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 3px rgba(90, 90, 90, 0.541);
+}
+
+.product-item:hover {
+    box-shadow: 0 0px 15px rgba(90, 90, 90, 0.541);
+    transform: scale(1.1);
+}
+
+.product-img {
+    width: 100%;
+    padding: 0 0 100% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img>a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.product-img>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.144);
+    transform-origin: 50% 0;
+    transition: .25s linear;
+    opacity: 0;
+}
+
+.product-img:hover .product-info {
+    opacity: 1;
+}
+
+.product-loop {
+    text-align: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(90, 90, 90, 0.541);
+}
+
+.product-loop>a>i {
+    padding: 21px;
+    font-size: 13px;
+    color: #999999;
+}
+
+.product-loop:hover i,
+.product-like:hover i,
+.product-copy:hover i {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.product-loop:hover,
+.product-like:hover,
+.product-copy:hover {
+    background-color: #d7b17c;
+}
+
+.product-control,
+.product-control_small {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-control_small {
+    display: none;
+}
+
+.product-control div {
+    box-shadow: 0 0 3px rgba(90, 90, 90, 0.541);
+}
+
+.product-like,
+.product-copy {
+    width: 43px;
+    height: 43px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.product-like i,
+.product-copy i {
+    padding: 15px;
+    font-size: 13px;
+    color: #999999;
+}
+
+.product-add {
+    margin: 0 5px;
+    width: 150px;
+    padding: 13px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #999999;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.product-add:hover {
+    color: #ffffff;
+    background-color: #d7b17c;
+    cursor: pointer;
+}
+
+.featured-load {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.load-more {
+    margin: 0 auto;
+    padding: 16px;
+    width: 240px;
+    font-size: 12px;
+    font-family: "Poppins-Bold";
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: #999999;
+}
+
+.load-more:hover {
+    background-color: #000000;
+}
+
+@media screen and (max-width: 1440px) {
+    .product {
+        margin-bottom: 60px;
+    }
+    .product-item {
+        width: calc(25% - 40px);
+        margin: 20px;
+    }
+    .product-container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .product-add {
+        width: 100px;
+        padding: 15px 13px;
+        font-size: 11px;
+    }
+    .product {
+        margin-bottom: 30px;
+    }
+    .nav-product>ul>li {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product-item {
+        width: calc(33% - 40px);
+    }
+    .nav-product>ul>li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-item {
+        width: calc(33% - 20px);
+        margin: 10px;
+    }
+    .nav-product>ul>li {
+        margin: 0 9px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .product-small {
+        display: block;
+    }
+    .product-info {
+        display: none;
+    }
+    .product-item {
+        width: calc(50% - 20px);
+        padding: 0;
+    }
+    .product-control {
+        display: none;
+    }
+    .product-control_small {
+        position: relative;
+        display: flex;
+        margin-top: 40px;
+    }
+    .product-add {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-item {
+        width: 85%;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .product-small {
+        margin: 20px auto;
+        width: 95%;
+    }
+    .product-item {
+        width: 90%;
+    }
+    .product-add {
+        width: 60%;
+    }
+}

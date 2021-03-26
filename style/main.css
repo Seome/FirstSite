@@ -138,9 +138,21 @@
     .container {
         padding: 0 1%;
     }
+    .content-title {
+        font-size: 30px;
+    }
+    .content-subtitle {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .content-title {
+        font-size: 24px;
+    }
+    .content-subtitle {
+        font-size: 14px;
+    }
     .name_pages-block {
         padding: 80px 0;
     }
@@ -171,6 +183,12 @@
     }
     .name_pages-away {
         margin-top: 20px;
+    }
+    .content-title {
+        font-size: 22px;
+    }
+    .content-subtitle {
+        font-size: 12px;
     }
 }
 

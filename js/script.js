@@ -13,9 +13,10 @@ function namePages(name) {
     return el;
 }
 
-function rootLastElemet() {
+function rootLastElemet(el) {
     rootLast = document.querySelectorAll('#root>div');
-    return rootLast[rootLast.length - 1];
+    // return rootLast[rootLast.length - 1];
+    rootLast[rootLast.length - 1].insertAdjacentElement('afterend', el);
 }
 
 
@@ -35,10 +36,10 @@ function funOnload() {
         include("js/Header.js");
         include("js/ModalBlocks.js");
         include("js/SmallVersion.js");
-        include("js/Slider.js");
+        include("js/Slider.js")
         include("js/Banner.js");
-        // include("js/Brands.js");
-        // include("js/Product.js");
+        include("js/Brands.js");
+        include("js/Product.js");
         // include("js/Reviews.js");
         // include("js/News.js");
         // include("js/Promotion.js");
@@ -58,10 +59,13 @@ function funOnload() {
 
 }
 
+
+
+
 function include(url) {
-    var script = document.createElement('script');
-    script.src = url;
-    document.getElementsByTagName('head')[0].appendChild(script);
+    elem = document.createElement('script');
+    elem.src = url;
+    document.getElementsByTagName('head')[0].appendChild(elem);
 }
 
 
@@ -74,7 +78,7 @@ function includeCss(url) {
 
 setTimeout(function() {
     document.getElementById('load').style.display = 'none';
-}, 300);
+}, 500);
 
 class OpenMenuOut {
     constructor(parent, open, classOpen) {

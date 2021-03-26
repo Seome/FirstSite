@@ -1,5 +1,6 @@
-let product = document.getElementById('product');
-
+product = document.createElement('div');
+product.id = "product";
+includeCss('style/product.css');
 
 product.innerHTML = `
 
@@ -17,7 +18,7 @@ product.innerHTML = `
                     <li>Lightning</li>
                 </ul>
             </nav>
-            <nav class="product-small small">
+            <nav class="product-small">
                 <div id="productSmallCatMain">
                     Shop by category <i class="fas fa-caret-down"></i>
                 </div>
@@ -66,7 +67,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -100,7 +101,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -135,7 +136,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -170,7 +171,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -205,7 +206,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -240,7 +241,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -275,7 +276,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -310,7 +311,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -345,7 +346,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -380,7 +381,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -415,7 +416,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -450,7 +451,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -485,7 +486,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -520,7 +521,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -555,7 +556,7 @@ product.innerHTML = `
                     <div class="product-price">
                         <div class="new-price">$370.00</div>
                     </div>
-                    <div class="product-control small">
+                    <div class="product-control_small">
                         <div class="product-like"><i class="fas fa-heart"></i></div>
                         <div class="product-add">Add to cart</div>
                         <div class="product-copy"><i class="far fa-clone"></i></div>
@@ -571,3 +572,7 @@ product.innerHTML = `
             </div>
         </div>
 `;
+
+rootLastElemet(product);
+// rootLastElemet().insertAdjacentElement('afterend', product);
+new OpenMenuOut('#productSmallCatMain', '#productSmallCat', 'navShow').OpenMenu();

@@ -95,5 +95,5 @@ banner.innerHTML = `
 </div>
 </div>
 `;
-
-rootLastElemet().insertAdjacentElement('afterend', banner);
+rootLastElemet(banner);
+// rootLastElemet().insertAdjacentElement('afterend', banner);

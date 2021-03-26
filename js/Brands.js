@@ -53,5 +53,5 @@ brands.innerHTML = `
             </div>
         </div>
 `;
-
-rootLastElemet().insertAdjacentElement('afterend', brands);
+rootLastElemet(brands);
+// rootLastElemet().insertAdjacentElement('afterend', brands);
